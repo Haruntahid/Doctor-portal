@@ -1,0 +1,80 @@
+Doctor Portal – Frontend Only (Admin + Doctor Dashboards)
+
+I want you to generate a React + TailwindCSS frontend-only Doctor Portal with a Landing Page, Login, Appointment Form, Admin Dashboard, and Doctor Dashboard.
+This is UI only (no backend, no database). Use dummy data + React state to simulate functionality.
+
+🔹 Features & Pages
+1. Landing Page
+
+Header with navigation: Home, Doctors, Blog, Login
+
+Hero section with intro + CTA (Book Appointment)
+
+Featured Doctors section (static doctor cards with image, name, specialization)
+
+Contact info (phone, email, address, Google Map placeholder)
+
+2. Appointment Page (Static Form)
+
+Form fields: Patient Name, Phone, Email, Select Doctor (dropdown), Date, Time, Problem Description
+
+On submit → show confirmation message (UI only)
+
+3. Login Page
+
+Two options: Doctor Login & Admin Login
+
+On login → redirect to respective dashboard (dummy auth)
+
+🔹 Admin Dashboard (UI only, no backend)
+
+Sidebar navigation: Dashboard, Doctors, Patients, Blog, Content, Sub-Admins, Settings
+
+Doctors Management:
+
+Show static list of doctors
+
+Add Doctor (form with name, specialization, availability, image)
+
+Delete Doctor (remove from list in UI)
+
+Patients Management: Show static patient list with name, doctor, date, status
+
+Blog Management: Add/Edit/Delete blog posts (title, content, image)
+
+Content Management: Update contact info & images (UI form only)
+
+Sub-Admin Management: Add sub-admin (form: name, email, role, password placeholder)
+
+Settings: Reset password for Admins & Doctors (dummy form with new password field)
+
+🔹 Doctor Dashboard (UI only, no backend)
+
+Sidebar navigation: Dashboard, Patients, Profile, Settings
+
+Dashboard Home: Show stats → total patients, served patients (dummy numbers)
+
+Patient List: Table with patient name, problem, status
+
+Profile Management: Edit profile info (name, specialization, contact)
+
+Settings: Reset password form (dummy input + confirmation)
+
+🔹 Tech Stack & Structure
+
+React + TailwindCSS for styling
+
+React Router for navigation (Landing, Appointment, Login, Dashboards)
+
+State Management: Local React state or Context API
+
+Components to build:
+
+Navbar, Footer, Sidebar, DoctorCard, BlogCard, AppointmentTable, StatsCard
+
+Dummy Data: Store in JSON/local state
+
+🔹 AI Instructions
+
+“Generate a complete React + TailwindCSS frontend-only Doctor Portal project with Landing Page, Appointment Form, Login, Admin Dashboard, and Doctor Dashboard.
+Use React Router for navigation and local state (dummy data) for doctors, patients, blogs, and admins. Implement UI forms for adding/deleting doctors, adding blogs, editing content, resetting passwords, and managing patients. Provide reusable components and responsive styling. At the end, include setup instructions (npm install, npm run dev).”
