@@ -25,20 +25,20 @@ export default function Navbar() {
                 Home
               </button>
             </Link>
-            <Link href="/doctors" data-testid="link-nav-doctors">
+            <a href="/#doctors" data-testid="link-nav-doctors">
               <button className={`text-sm font-medium transition-colors hover:text-primary ${
-                location === '/doctors' ? 'text-primary' : 'text-muted-foreground'
+                location === '/#doctors' ? 'text-primary' : 'text-muted-foreground'
               }`}>
                 Doctors
               </button>
-            </Link>
-            <Link href="/blog" data-testid="link-nav-blog">
+            </a>
+            <a href="/#blog" data-testid="link-nav-blog">
               <button className={`text-sm font-medium transition-colors hover:text-primary ${
-                location === '/blog' ? 'text-primary' : 'text-muted-foreground'
+                location === '/#blog' ? 'text-primary' : 'text-muted-foreground'
               }`}>
                 Blog
               </button>
-            </Link>
+            </a>
           </div>
 
           <div className="flex items-center gap-2">
