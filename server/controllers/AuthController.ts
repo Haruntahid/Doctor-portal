@@ -8,7 +8,9 @@ import {Request, Response} from "express";
 export const createUser = async (req: Request, res: Response) => {
     const {username, password} = req.body;
 
-    const user = await Users.findOne({username});
+    const user = await Users.findOne({
+       where: {username}
+    });
     if (user) {
         return res.status(400).json({
             success: false,
